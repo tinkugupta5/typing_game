@@ -1,0 +1,54 @@
+.landing-container
+{
+    display: flex;
+    min-height: 90vh;
+    justify-content: space-between;
+    align-items: center;
+    color: #eee2ee;
+    padding: 0 32px;
+    margin: 0px;
+    flex: wrap;
+}
+
+.landing-header
+{
+    font-size: 92px;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+.typewritter-container
+{
+    font-size: 60px;
+    letter-spacing: 4px;
+}
+
+.flash-image
+{
+    width: 40vw;
+}
+
+@media (max-width: 800px) {
+    .landing-container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flash-image
+    {
+        width: 50vh;
+    }
+
+    .landing-header
+    {
+        margin-top: 32px;
+        text-align: center;
+    }
+
+    .typewritter-container
+    {
+        text-align: center;
+    }
+}
