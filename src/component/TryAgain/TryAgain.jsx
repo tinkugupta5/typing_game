@@ -1,4 +1,5 @@
 import React from "react";
+import "./TryAgain.css";
 
 const TryAgain = ({words,characters,wpm}) => {
 
@@ -17,7 +18,7 @@ const TryAgain = ({words,characters,wpm}) => {
             <div>
                 <button className="end-button start-again-btn">Retry</button>
                 <button className="end-button share-btn" onClick={() => {window.open("https://www.facebook.com/share ")}}>Share</button>
-                <button className="end-button">Retry</button>
+                <button className="end-button tweet-btn">Retry</button>
             </div>
         </div>
 
