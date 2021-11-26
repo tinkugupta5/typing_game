@@ -11,7 +11,7 @@ const TryAgain = ({words,characters,wpm}) => {
                 <p>
                     <b>charecter:</b> {characters}
                     <b>Word:</b> {words}
-                    <b>Speed:</b> {characters}
+                    <b>Speed:</b> {wpm}
                 </p>
             </div>
 
