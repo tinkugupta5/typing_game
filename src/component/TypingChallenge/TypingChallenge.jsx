@@ -3,6 +3,8 @@ import "./TypingChallenge.css";
 
 const TypingChallenge = ({selectedParagraph}) => {
 
+    const timeRemaining = 30;
+
     return ( 
         <div className="typing-challenge">
 
@@ -19,8 +21,7 @@ const TypingChallenge = ({selectedParagraph}) => {
                 </div>
                 <div className="textarea-right">
                 <textarea className="textarea" >
-                       
-                    
+                                          
                 </textarea>
                 </div>
             </div>
