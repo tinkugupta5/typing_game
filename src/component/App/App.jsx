@@ -5,20 +5,30 @@ import Landing from "../Landing/Landing";
 import Nav from "../Nav/Nav";
 import "./App.css"; 
 
-const TotalTime = 60;
+const TotalTime = 9;
+const Serviceurl = "http://metaphorpsum.com/paragraphs/1/9";
 class App extends React.Component {
+
+    
     state = {
         selectedparagraph :"hellow world",
         timeStarted: false,
         timeRemaining: TotalTime,
-        words:0,
-        characters:0,
-        wpm:0,
+        words:170,
+        characters:60,
+        wpm:20,
     };
 
    
 
     render () {
+
+        fetch(Serviceurl)
+  .then(response => response.text())
+  .then((information) => {
+      console.log("API RESPONSE IS" , information)
+  });
+  console.log(Serviceurl);
         
         return(
            <div className="app">

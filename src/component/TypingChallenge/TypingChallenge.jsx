@@ -6,14 +6,14 @@ const TypingChallenge = ({selectedparagraph,
     }) => {
 
    
-console.log(timeRemaining);
+// console.log(timeRemaining);
     return ( 
 
 
         <div className="typing-challenge">
 
             <div className="timer-container">
-                <p className="timer">00:{timeRemaining}</p>
+                <p className="timer">00:{timeRemaining >= 10 ? timeRemaining : `0${timeRemaining}`}</p>
                 <p className="timer">Start typing to start the test</p>
             </div>
 

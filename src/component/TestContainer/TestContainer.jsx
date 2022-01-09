@@ -10,7 +10,7 @@ const TestContainer = ({selectedparagraph,
     characters,
     wpm,}) => {
 
-        console.log(timeRemaining);
+        // console.log(timeRemaining);
     
     return (
 
