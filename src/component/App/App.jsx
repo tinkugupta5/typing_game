@@ -6,7 +6,8 @@ import Nav from "../Nav/Nav";
 import "./App.css"; 
 
 const TotalTime = 9;
-const Serviceurl = "http://metaphorpsum.com/paragraphs/1/9";
+const ServiceUrl = "http://metaphorpsum.com/paragraphs/1/9";
+
 class App extends React.Component {
 
     
@@ -17,19 +18,22 @@ class App extends React.Component {
         words:170,
         characters:60,
         wpm:20,
+
+        
     };
 
-   
 
+    componentDidMount () {
+        fetch(ServiceUrl)
+        .then((response) => response.text())   
+        .then((data) => {
+             this.setState({ selectedparagraph: data });
+            console.log(data);
+    });
+    }
+    
     render () {
-
-        fetch(Serviceurl)
-  .then(response => response.text())
-  .then((information) => {
-      console.log("API RESPONSE IS" , information)
-  });
-  console.log(Serviceurl);
-        
+      
         return(
            <div className="app">
             {/* Navbar Section */}
