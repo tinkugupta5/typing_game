@@ -12,7 +12,7 @@ class App extends React.Component {
 
     
     state = {
-        selectedparagraph :"hellow world",
+        selectedparagraph :"my name is tinku gupta",
         timeStarted: false,
         timeRemaining: TotalTime,
         words:170,
@@ -24,12 +24,12 @@ class App extends React.Component {
 
 
     componentDidMount () {
-        fetch(ServiceUrl)
-        .then((response) => response.text())   
-        .then((data) => {
-             this.setState({ selectedparagraph: data });
-            console.log(data);
-    });
+    //     fetch(ServiceUrl)
+    //     .then((response) => response.text())   
+    //     .then((data) => {
+    //          this.setState({ selectedparagraph: data });
+    //         console.log(data);
+    // });
     }
     
     render () {
