@@ -7,7 +7,9 @@ const TypingChallengeContainer = ({selectedparagraph,
     timeRemaining,
     words,
     characters,
-    wpm,}) => {
+    wpm,
+    testInfo
+}) => {
 
 
 
@@ -28,7 +30,7 @@ const TypingChallengeContainer = ({selectedparagraph,
              {/* Charecter type */}
             <div className="typewriter-container">
                 {/* <TypingChallenge     selectedParagraph="hellow world"/> */}
-               <TypingChallenge wpm={wpm} characters={characters} words={words} timeStarted={timeStarted} timeRemaining={timeRemaining} selectedparagraph={selectedparagraph} />
+               <TypingChallenge testInfo={testInfo} wpm={wpm} characters={characters} words={words} timeStarted={timeStarted} timeRemaining={timeRemaining} selectedparagraph={selectedparagraph} testInfo={testInfo} />
              </div>
 
             {/* Real hallenge */}

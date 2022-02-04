@@ -8,7 +8,10 @@ const TestContainer = ({selectedparagraph,
     timeRemaining,
     words,
     characters,
-    wpm,}) => {
+    wpm,
+   testInfo
+
+}) => {
 
         // console.log(timeRemaining);
     
@@ -16,11 +19,12 @@ const TestContainer = ({selectedparagraph,
 
         <div className="test-container">
              {
+                //  condition apply 
             timeRemaining > 0 ?(<div data-aos="fade-up" className="typing-challenge-cont">
-            <TypingChallengeContainer timeRemaining={timeRemaining} selectedparagraph={selectedparagraph} timeStarted={timeStarted} words={words} characters={characters} wpm={wpm}/>
+            <TypingChallengeContainer timeRemaining={timeRemaining} selectedparagraph={selectedparagraph} timeStarted={timeStarted} words={words} characters={characters} wpm={wpm} testInfo={testInfo}/>
         </div>) : (
              <div className="try-again-cont">
-             <TryAgain words={words} characters={characters} wpm={wpm}   />
+             <TryAgain words={words} characters={characters} wpm={wpm} testInfo={testInfo}   />
          </div>
 
              )
